@@ -1,7 +1,6 @@
 /* ******** Variables ******** */
 :root {
-  --fade-time: 2s;
-  --ease-increment: 0.35s;
+  --transform-time: 0.3s;
   --border-neutral: 2px solid rgb(66, 57, 57);
 }
 
@@ -88,6 +87,12 @@ nav.top-nav {
   border-bottom: var(--border-neutral);
 }
 
+.top-nav li:hover {
+  border-bottom: var(--border-neutral);
+  /* transition: var(--transform-time); */
+}
+
+
 .top-nav a {
   text-decoration: none;
   color: #181717;
@@ -160,13 +165,13 @@ img, .logo {
 
 .logo:hover {
     transform: scale(1.1);
-    transition: transform 0.3s;
+    transition: var(--transform-time);
     cursor: pointer;
 }
 
 /* To make the transition back smooth */
 .logo:not(:hover) {
     transform: scale(1.0);
-    transition: transform 0.3s;
+    transition: var(--transform-time);
     cursor: pointer;
 }
