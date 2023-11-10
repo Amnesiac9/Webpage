@@ -7,12 +7,13 @@
     // Select the theme preference from localStorage
     const currentTheme = localStorage.getItem("theme");
   
-    // If the current theme in localStorage is "dark"
+    // If the current theme in localStorage is "light"
     if (currentTheme == "light") {
     // then remove the dark class from all dark elements
     darkElements.forEach((el) => {
         el.classList.remove("dark");
     });
+    // Set the inner text of the darkmode button
     document.getElementById("darkmode-switch").innerText = "Dark mode: OFF";
     }
   
