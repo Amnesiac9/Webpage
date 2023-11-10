@@ -29,11 +29,11 @@
             // ...then let's make the theme dark
             theme = "dark";
             // update the button text
-            document.getElementById("darkmode-switch").innerText = "ON";
+            document.getElementById("darkmode-switch").innerText = "Dark mode: ON";
         }
         else {
             // update the button text
-            document.getElementById("darkmode-switch").innerText = "OFF";
+            document.getElementById("darkmode-switch").innerText = "Dark mode: OFF";
         }
 
         // Then save the choice in localStorage
