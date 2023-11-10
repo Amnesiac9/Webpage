@@ -4,6 +4,32 @@
   --border-neutral: 2px solid rgb(66, 57, 57);
 }
 
+
+
+/* ******** Dark Mode ******** */
+.dark {
+  background-color: #222;
+  color: #d9d9d9;
+  /* border-color: #545454; */
+}
+
+.darkmode-switch {
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #555;
+  border-radius: 1.25rem;
+  width: 3.125rem;
+  text-align: center;
+  font-size: 0.50rem;
+  padding: 0.15rem;
+  /* margin-left: 0.25rem; */
+  opacity: 0.50;
+}
+
+.darkmode-switch:hover {
+border: 2px solid #e0e0e0;
+}
+
 /* ******** Container ******** */
 #wrapper {
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -12,10 +38,20 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 0rem 0.75rem 1.5rem; /* top right bottom left */
+  /* background-color: #222; */
+  opacity: 0.85;
+}
 
+/* Wrapper children normal opacity */
+#wrapper * {
+  opacity: 1;
+}
+
+#wrapper.home{
+  background-color: #222;
 }
 
 body {
@@ -29,48 +65,37 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 
-/* ******** Dark Mode ******** */
-.dark {
-    background-color: #222;
-    color: #d9d9d9;
-    /* border-color: #545454; */
-}
+
 
 
 /* ******** CSS for Buttons ******** */
-.darkmode-switch {
-    display: inline-block;
-    cursor: pointer;
-    border: 2px solid #555;
-    border-radius: 1.25rem;
-    width: 3.125rem;
-    text-align: center;
-    font-size: 0.50rem;
-    padding: 0.15rem;
-    /* margin-left: 0.25rem; */
-    opacity: 0.50;
-}
 
-.darkmode-switch:hover {
-  border: 2px solid #e0e0e0;
-}
 
 
 /* ******** CSS for header top bar ******** */
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 1.25rem;
-  padding: 10px 20px; /* Adjust the padding as needed */
+  margin: 0 auto 1.25rem;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem; */
+  padding: 10px 20px;
+  max-width: 50rem;
+  justify-content: space-between;
+  /* width: 100%; Add this line to make sure it takes the full width */
+  /* clear: both; */
   
 }
 
 nav.top-nav {
   width: 100%;
-  opacity: 0.75;
+  /* opacity: 0.75; */
 }
 
 
@@ -79,7 +104,7 @@ nav.top-nav {
   list-style: none;
   align-items: center;
   justify-content: center;
-  gap: 5px; /* Adjust the gap between list items as needed */
+  gap: 5px; 
   margin: 0;
   padding: 0;
 }
@@ -115,6 +140,10 @@ h2 {
   font-weight: 600;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
+}
+
+h3 {
+  text-align: center;
 }
 
 /* ******** CSS for Tables ******** */
@@ -180,4 +209,14 @@ img, .logo {
     transform: scale(1.0);
     transition: var(--transform-time);
     cursor: pointer;
+}
+
+/* ******** Home ******** */
+.home * {
+  color:rgb(255, 255, 255) !important;
+  /* font-size: 1.5rem; */
+}
+
+.hidden * {
+  display: none;
 }

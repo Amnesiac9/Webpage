@@ -13,7 +13,7 @@
     darkElements.forEach((el) => {
         el.classList.remove("dark");
     });
-    document.getElementById("darkmode-switch").innerText = "OFF";
+    document.getElementById("darkmode-switch").innerText = "Dark mode: OFF";
     }
   
     // Listen for a click on the button 
