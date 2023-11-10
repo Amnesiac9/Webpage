@@ -24,6 +24,10 @@ body {
   color: #252525;
 }
 
+.backgroundDog{
+  background-image: url('img_girl.jpg');
+}
+
 
 /* ******** Dark Mode ******** */
 .dark {
