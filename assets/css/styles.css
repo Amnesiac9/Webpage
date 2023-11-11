@@ -57,30 +57,17 @@
   z-index: 999; 
 }
 
-/* .gallery-container {
-  display:flex;
-  width: auto;
-  height: 75%;
-  justify-content: center;
-  align-items: center;
-  
+.gallery-container {
+    max-height: 75%;
+    max-width: 90%;
 }
 
-.gallery-large{
-width: 90% !important;
-max-width: 90%;
-height: auto;
-cursor: pointer;
-padding: 5rem;
-margin: 5rem;
-} */
-
-/* .gallery-small {
-  min-width: 20%;
-} */
-
-
-
+.close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  max-width: 1064px;
+}
 
 .close-btn {
   /* position: relative;
@@ -89,7 +76,6 @@ margin: 5rem;
   font-size: 50px;
   color: white;
   cursor: pointer;
-  z-index: 9997;
 }
 
 
@@ -140,26 +126,13 @@ border: 2px solid #ffffff;
   max-width: 75rem;
   margin: 0 auto;
   padding: 0rem 0.75rem 1.5rem; /* top right bottom left */
-  background-color: #cdcdcd;
-  opacity: 0.85;
+  background-color: rgba(211, 211, 211, 0.85);
   align-items: center;
 }
 
-/* Wrapper children normal opacity */
-#wrapper * {
-  /* color: black; */
-  opacity: 1;
-}
-
 #wrapper.dark {
-  background-color: #222;
+  background-color: rgba(28, 28, 28, 0.85);
 }
-
-/* #wrapper.dark * {
-  color: rgb(253, 253, 253);
-} */
-
-
 
 .backgroundDog{
   background-image: url('/assets/images/Mars_fall.jpg');
@@ -168,9 +141,6 @@ border: 2px solid #ffffff;
   background-size: cover;
   background-position: center;
 }
-
-
-
 
 
 /* ******** CSS for Buttons ******** */
