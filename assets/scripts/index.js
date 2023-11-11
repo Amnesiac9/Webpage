@@ -83,10 +83,12 @@
         const currentPageIndex = pages.indexOf(currentPage);
         if (currentPage === "" || currentPageIndex === -1) {
             location.href = pages[1];
+            return;
         }
         if (currentPageIndex >= pages.length - 1) {
             if (currentPage === "") {
                 location.href = pages[1];
+                return;
             }
             location.href = pages[0];
             return;
