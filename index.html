@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
         <script defer src="assets/scripts/index.js"></script>
     </head>
-    <body class="home backgroundDog"> <!-- body defines the document's viewable content -->
+    <body class="home dark backgroundDog"> <!-- body defines the document's viewable content -->
         <header class="header"> <!-- header represents introductory content, logo, navigation, etc. -->
             <div id="logo"> <!-- div defines a division or section in an HTML document -->
                 <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
@@ -35,18 +35,20 @@
                     </li>
                 </ul>
             </nav>
+            <div class="switch">
+                <span id="darkmode-switch" class="darkmode-switch">Dark mode: ON</span>
+            </div>
             <div class="switch hidden">
                 <span id="darkmode-switch" class="darkmode-switch">Dark mode: ON</span>
             </div>
         </header>
-        <main id="wrapper" class="home"> <!-- main defines the main content of a document -->
+        <main id="wrapper" class="home dark"> <!-- main defines the main content of a document -->
             <h2 class="page-title">Home</h2> <!-- h2 defines a section heading, largest is h1, getting smaller up to h6 -->
             <h3> 🐕 Welcome to my website dedicated to Mars! 🐕</h3> <!-- h3 defines another section heading, smaller than h2-->
             <p> Mars is the best chocolate lab in the world. </p> <!--p defines a generic paragraph -->
             <button class="next-button" id="next-button" onclick="nextPage(window.location.href)" autofocus> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
                 🐾 Click Here to learn more! 🐾
             </button>
-            
         </main>
     </body>
     <footer> <!-- footer defines a footer for a document or section -->
