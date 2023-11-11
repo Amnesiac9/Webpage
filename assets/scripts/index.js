@@ -42,7 +42,7 @@
 
 
 
-    if (document.location.pathname == '/gallery.html') {
+    // if (document.location.pathname == '/gallery.html') {
         // Image gallery
         document.addEventListener('DOMContentLoaded', function() {
             const flexitems = document.querySelectorAll('.flexitem');
@@ -68,7 +68,7 @@
 
             });
         });
-    }
+    // }
 
     // Next page function =)
     nextPage = (currenURL) => {
