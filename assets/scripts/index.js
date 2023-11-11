@@ -77,7 +77,7 @@
         const currentPageIndex = pages.indexOf(currentPage);
         if (currentPageIndex >= pages.length - 1 || currentPageIndex === -1) {
             console.log(currentPage)
-            if (currentPage === String.empty) {
+            if (currentPage === "") {
                 location.href = pages[1];
             }
             location.href = pages[0];
