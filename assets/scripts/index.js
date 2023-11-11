@@ -42,33 +42,32 @@
 
 
 
-    // if (document.location.pathname == '/gallery.html') {
-        // Image gallery
-        document.addEventListener('DOMContentLoaded', function() {
-            const flexitems = document.querySelectorAll('.flexitem');
-            const overlay = document.querySelector('.overlay');
-            const closeBtn = document.querySelector('.close-btn');
-            const largeImage = document.querySelector('.gallery-large');
+    // Image gallery
+    document.addEventListener('DOMContentLoaded', function() {
+        const flexitems = document.querySelectorAll('.flexitem');
+        const overlay = document.querySelector('.overlay');
+        const closeBtn = document.querySelector('.close-btn');
+        const largeImage = document.querySelector('.gallery-large');
 
-            closeBtn.addEventListener('click', function() {
-                overlay.style.display = 'none';
-            });
-
-            overlay.addEventListener('click', function() {
-                overlay.style.display = 'none'
-            });
-        
-            flexitems.forEach(container => {
-                const smallImage = container.querySelector('.gallery-small')
-                smallImage.addEventListener('click', function() {
-                    overlay.style.display = 'flex';
-                    largeImage.src = smallImage.src;
-                    largeImage.alt = smallImage.alt;
-                });
-
-            });
+        closeBtn.addEventListener('click', function() {
+            overlay.style.display = 'none';
         });
-    // }
+
+        overlay.addEventListener('click', function() {
+            overlay.style.display = 'none'
+        });
+    
+        flexitems.forEach(container => {
+            const smallImage = container.querySelector('.gallery-small')
+            smallImage.addEventListener('click', function() {
+                overlay.style.display = 'flex';
+                largeImage.src = smallImage.src;
+                largeImage.alt = smallImage.alt;
+            });
+
+        });
+    });
+
 
     // Next page function =)
     nextPage = (currenURL) => {
