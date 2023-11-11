@@ -74,7 +74,7 @@
         const currentPage = currenURL.split('/').pop();
         const pages = ['index.html', 'about.html', 'gallery.html', 'resources.html'];
         const currentPageIndex = pages.indexOf(currentPage);
-        if (currentPageIndex === pages.length - 1) {
+        if (currentPageIndex >= pages.length - 1 || currentPageIndex === -1) {
             location.href = pages[0];
             return;
         }
