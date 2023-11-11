@@ -42,7 +42,7 @@
 
 
 
-    if (document.currentPage == 'gallery.html') {
+    if (document.location.pathname == '/gallery.html') {
         // Image gallery
         document.addEventListener('DOMContentLoaded', function() {
             const flexitems = document.querySelectorAll('.flexitem');
