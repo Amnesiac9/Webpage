@@ -135,7 +135,7 @@ border: 2px solid #ffffff;
 }
 
 .backgroundDog{
-  background-image: url('/assets/images/Mars_fall.jpg');
+  background-image: url('./assets/images/Mars_fall.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
