@@ -135,7 +135,7 @@ border: 2px solid #ffffff;
 }
 
 .backgroundDog{
-  background-image: url('/assets/images/Mars_Fall.jpg');
+  background-image: url('../images/Mars_Fall.jpg'); /* Need to use a direct path here */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
