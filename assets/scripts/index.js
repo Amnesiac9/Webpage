@@ -1,5 +1,4 @@
-  // Darkmode JS
-
+    // Darkmode JS
     // Select the button
     const btn = document.querySelector(".darkmode-switch");
     // Select all elements with the class "dark"
@@ -43,28 +42,43 @@
 
 
 
-    // Image gallery
-    document.addEventListener('DOMContentLoaded', function() {
-        const flexitems = document.querySelectorAll('.flexitem');
-        const overlay = document.querySelector('.overlay');
-        const closeBtn = document.querySelector('.close-btn');
-        const largeImage = document.querySelector('.gallery-large');
+    if (document.currentPage == 'gallery.html') {
+        // Image gallery
+        document.addEventListener('DOMContentLoaded', function() {
+            const flexitems = document.querySelectorAll('.flexitem');
+            const overlay = document.querySelector('.overlay');
+            const closeBtn = document.querySelector('.close-btn');
+            const largeImage = document.querySelector('.gallery-large');
 
-        closeBtn.addEventListener('click', function() {
-            overlay.style.display = 'none';
-        });
-
-        overlay.addEventListener('click', function() {
-            overlay.style.display = 'none'
-        });
-    
-        flexitems.forEach(container => {
-            const smallImage = container.querySelector('.gallery-small')
-            smallImage.addEventListener('click', function() {
-                overlay.style.display = 'block';
-                largeImage.src = smallImage.src;
-                largeImage.alt = smallImage.alt;
+            closeBtn.addEventListener('click', function() {
+                overlay.style.display = 'none';
             });
 
+            overlay.addEventListener('click', function() {
+                overlay.style.display = 'none'
+            });
+        
+            flexitems.forEach(container => {
+                const smallImage = container.querySelector('.gallery-small')
+                smallImage.addEventListener('click', function() {
+                    overlay.style.display = 'block';
+                    largeImage.src = smallImage.src;
+                    largeImage.alt = smallImage.alt;
+                });
+
+            });
         });
-    });
+    }
+
+    // Next page function =)
+    nextPage = (currenURL) => {
+        const currentPage = currenURL.split('/').pop();
+        const pages = ['index.html', 'about.html', 'gallery.html', 'resources.html'];
+        const currentPageIndex = pages.indexOf(currentPage);
+        if (currentPageIndex === pages.length - 1) {
+            location.href = pages[0];
+            return;
+        }
+        location.href = pages[currentPageIndex + 1];
+    }
+    
