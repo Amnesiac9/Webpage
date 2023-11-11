@@ -49,6 +49,11 @@
         const closeBtn = document.querySelector('.close-btn');
         const largeImage = document.querySelector('.gallery-large');
 
+        if (!closeBtn) {
+            return;
+        }
+
+
         closeBtn.addEventListener('click', function() {
             overlay.style.display = 'none';
         });
