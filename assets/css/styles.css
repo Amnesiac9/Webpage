@@ -124,6 +124,7 @@ border: 2px solid #ffffff;
   padding: 0rem 0.75rem 1.5rem; /* top right bottom left */
   background-color: rgba(211, 211, 211, 0.85);
   align-items: center;
+  
 }
 
 #wrapper.dark {
@@ -183,6 +184,7 @@ footer {
   padding: 0.5rem 1rem;
   max-width: 75rem;
   opacity: 0.50;
+  min-height: 50vh;
 }
 
 nav.top-nav {
