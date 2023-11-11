@@ -78,10 +78,13 @@
     nextPage = (currentURL) => {
         console.log(currentURL)
         const currentPage = currentURL.split('/').pop();
+        console.log(currentPage)
         const pages = ['index.html', 'about.html', 'gallery.html', 'resources.html'];
         const currentPageIndex = pages.indexOf(currentPage);
-        if (currentPageIndex >= pages.length - 1 || currentPageIndex === -1) {
-            console.log(currentPage)
+        if (currentPage === "" || currentPageIndex === -1) {
+            location.href = pages[1];
+        }
+        if (currentPageIndex >= pages.length - 1) {
             if (currentPage === "") {
                 location.href = pages[1];
             }
