@@ -75,7 +75,7 @@
 
 
     // Next page function =)
-    nextPage = (currentURL) => {
+    let nextPage = (currentURL) => {
         console.log(currentURL)
         const currentPage = currentURL.split('/').pop();
         console.log(currentPage)
