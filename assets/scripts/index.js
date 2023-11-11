@@ -75,6 +75,10 @@
         const pages = ['index.html', 'about.html', 'gallery.html', 'resources.html'];
         const currentPageIndex = pages.indexOf(currentPage);
         if (currentPageIndex >= pages.length - 1 || currentPageIndex === -1) {
+            console.log(currentPage)
+            if (currentPage === 'Webpage' || currentPage === 'Webpage/' ||  currentPage === ' ') {
+                location.href = pages[1];
+            }
             location.href = pages[0];
             return;
         }
