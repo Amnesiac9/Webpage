@@ -61,7 +61,7 @@
             flexitems.forEach(container => {
                 const smallImage = container.querySelector('.gallery-small')
                 smallImage.addEventListener('click', function() {
-                    overlay.style.display = 'block';
+                    overlay.style.display = 'flex';
                     largeImage.src = smallImage.src;
                     largeImage.alt = smallImage.alt;
                 });
