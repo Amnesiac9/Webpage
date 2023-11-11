@@ -70,8 +70,9 @@
 
 
     // Next page function =)
-    nextPage = (currenURL) => {
-        const currentPage = currenURL.split('/').pop();
+    nextPage = (currentURL) => {
+        console.log(currentURL)
+        const currentPage = currentURL.split('/').pop();
         const pages = ['index.html', 'about.html', 'gallery.html', 'resources.html'];
         const currentPageIndex = pages.indexOf(currentPage);
         if (currentPageIndex >= pages.length - 1 || currentPageIndex === -1) {
